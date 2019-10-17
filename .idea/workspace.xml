@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c68a891-60f1-4adb-afee-d17f4fa4c741" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/AboutComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PeopleComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ContactComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DishdetailComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DishdetailComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/HeaderComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeaderComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MenuComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MenuComponent.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +124,12 @@
       <workItem from="1570780909404" duration="5560000" />
       <workItem from="1570868827532" duration="4599000" />
       <workItem from="1570932464698" duration="4576000" />
-      <workItem from="1571017681724" duration="3819000" />
+      <workItem from="1571017681724" duration="3849000" />
+      <workItem from="1571105211485" duration="2231000" />
+      <workItem from="1571125164432" duration="1211000" />
+      <workItem from="1571129128273" duration="1959000" />
+      <workItem from="1571209469726" duration="5375000" />
+      <workItem from="1571279736054" duration="1856000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1570333153032</created>
@@ -153,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570938548680</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update dishdetail">
+      <created>1571021516391</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1571021516391</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +190,7 @@
     <MESSAGE value="added comments" />
     <MESSAGE value="added container components" />
     <MESSAGE value="update homepage" />
-    <option name="LAST_COMMIT_MESSAGE" value="update homepage" />
+    <MESSAGE value="update dishdetail" />
+    <option name="LAST_COMMIT_MESSAGE" value="update dishdetail" />
   </component>
 </project>
