@@ -31,7 +31,7 @@ class Header extends Component {
 
     handleLogin(event){
         this.toggleModal();
-        alert(`User: ${this.username.value} Remember: ${this.remember.checked}`);
+        alert(`Welcome, ${this.username.value}`);
         event.preventDefault();
     }
 
@@ -70,7 +70,7 @@ class Header extends Component {
                             </Nav>
                             <Nav className="ml-auto" navbar>
                                 <NavItem>
-                                    <Button outline onClick={this.toggleModal} color="success">
+                                    <Button outline onClick={this.toggleModal} color="warning">
                                         <span className="fa fa-sign-in fa-lg"></span> Login
                                     </Button>
                                 </NavItem>
