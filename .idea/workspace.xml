@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c68a891-60f1-4adb-afee-d17f4fa4c741" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/CommentForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/comments.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/dishes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/leaders.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/promotions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DishdetailComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DishdetailComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/configureStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/configureStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducer.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +33,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../conFusion" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -135,7 +139,11 @@
       <workItem from="1571543045675" duration="2324000" />
       <workItem from="1571546112577" duration="810000" />
       <workItem from="1571550713016" duration="8000" />
-      <workItem from="1571572665325" duration="2226000" />
+      <workItem from="1571572665325" duration="2353000" />
+      <workItem from="1571625093583" duration="36000" />
+      <workItem from="1571652224631" duration="255000" />
+      <workItem from="1571653992380" duration="614000" />
+      <workItem from="1571715501692" duration="952000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1570333153032</created>
@@ -186,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571369642837</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="comment">
+      <created>1571576532444</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1571576532444</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +228,7 @@
     <MESSAGE value="update dishdetail" />
     <MESSAGE value="added login" />
     <MESSAGE value="react-redux-form validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="react-redux-form validation" />
+    <MESSAGE value="comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="comment" />
   </component>
 </project>
