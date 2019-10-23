@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c68a891-60f1-4adb-afee-d17f4fa4c741" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/redux/comments.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/dishes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/leaders.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/promotions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LoadingComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/ActionCreators.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/ActionTypes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CommentForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DishdetailComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DishdetailComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HomeComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomeComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MenuComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MenuComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/comments.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/configureStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/configureStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/dishes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/dishes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +150,11 @@
       <workItem from="1571625093583" duration="36000" />
       <workItem from="1571652224631" duration="255000" />
       <workItem from="1571653992380" duration="614000" />
-      <workItem from="1571715501692" duration="952000" />
+      <workItem from="1571715501692" duration="1019000" />
+      <workItem from="1571724779530" duration="1377000" />
+      <workItem from="1571738527657" duration="2520000" />
+      <workItem from="1571794522384" duration="1012000" />
+      <workItem from="1571812053539" duration="5134000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1570333153032</created>
@@ -201,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571576532444</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="function reducer">
+      <created>1571716519562</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1571716519562</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +247,7 @@
     <MESSAGE value="added login" />
     <MESSAGE value="react-redux-form validation" />
     <MESSAGE value="comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="comment" />
+    <MESSAGE value="function reducer" />
+    <option name="LAST_COMMIT_MESSAGE" value="function reducer" />
   </component>
 </project>
