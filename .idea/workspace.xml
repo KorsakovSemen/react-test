@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c68a891-60f1-4adb-afee-d17f4fa4c741" name="Default Changelist" comment="loading">
+    <list default="true" id="7c68a891-60f1-4adb-afee-d17f4fa4c741" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/ActionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/ActionTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/dishes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/dishes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -150,7 +147,8 @@
       <workItem from="1571834606533" duration="594000" />
       <workItem from="1571882869155" duration="937000" />
       <workItem from="1571889124907" duration="1484000" />
-      <workItem from="1571891088426" duration="353000" />
+      <workItem from="1571891088426" duration="849000" />
+      <workItem from="1571900627964" duration="2551000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1570333153032</created>
@@ -222,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571818952057</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="home">
+      <created>1571900137826</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1571900137826</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +257,7 @@
     <MESSAGE value="comment" />
     <MESSAGE value="function reducer" />
     <MESSAGE value="loading" />
-    <option name="LAST_COMMIT_MESSAGE" value="loading" />
+    <MESSAGE value="home" />
+    <option name="LAST_COMMIT_MESSAGE" value="home" />
   </component>
 </project>
