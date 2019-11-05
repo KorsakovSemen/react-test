@@ -1,6 +1,18 @@
 import React from 'react';
-import {Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, CardImg, CardText, CardTitle, Media} from 'reactstrap';
+import {
+    Breadcrumb,
+    BreadcrumbItem, Button,
+    Card,
+    CardBody,
+    CardHeader,
+    Col, Label,
+    Media,
+    Row
+} from 'reactstrap';
 import { Link } from 'react-router-dom';
+import {Control, Errors, LocalForm} from "react-redux-form";
+import {baseUrl} from "../shared/baseUrl";
+import {FadeTransform} from "react-animation-components";
 
 
 function RenderLeader({leader}){
@@ -10,10 +22,14 @@ function RenderLeader({leader}){
         return(
 
             <div>
-
+                <FadeTransform
+                    in
+                    transformProps={{
+                        exitTransform: 'scale(0.5) translateY(-50%)'
+                    }}>
                 <Media className="r-1 mb-3 my-3">
                 <Media left className="mr-3">
-                    <Media object src={leader.image} width="64px"  alt={leader.name}/>
+                    <Media object src={baseUrl + leader.image} width="64px"  alt={leader.name}/>
                 </Media>
                 <Media body>
                     <Link to={`/aboutus/${leader.id}`}>
@@ -21,13 +37,11 @@ function RenderLeader({leader}){
                         {leader.name}
                     </Media>
                     </Link>
-                    <Media className="mb-2">
-                        {leader.designation}
-                    </Media>
+
                     {leader.description}
                 </Media>
                 </Media>
-
+                </FadeTransform>
 
 
             </div>
@@ -42,15 +56,26 @@ function RenderLeader({leader}){
 }
 
 
-function About(props) {
+class About extends React.Component {
 
-    const leaders = props.leaders.map((leader) => {
-        return (
-            <div key={leader.id}>
-                <RenderLeader leader={leader} />
-            </div>
-        );
-    });
+    constructor(props) {
+        super(props);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleSubmit(values){
+        this.props.postLeaders(this.props.leadersId, values.name, values.abbr, values.description);
+    }
+
+    render() {
+
+    const leaders = this.props.leaders.map((leader) => {
+            return (
+                <div key={leader.id}>
+                    <RenderLeader leader={leader} />
+                </div>
+            );
+        });
 
     return(
         <div className="container">
@@ -112,8 +137,42 @@ function About(props) {
                     </Media>
                 </div>
             </div>
+            <LocalForm onSubmit={(values) => this.handleSubmit(values)}>
+                <Row className="form-group">
+                    <Label htmlFor="name" md={2}>Your Name</Label>
+                    <Col md={10}>
+                        <Control.text model=".name" id="name" name="name"
+                                      placeholder="Name"
+                                      className="form-control"
+
+                        />
+                    </Col>
+                </Row>
+                <Row className="form-group">
+                    <Label htmlFor="abbr" md={2}>Rating</Label>
+                    <Col md={10}>
+                        <Control.text  model=".abbr" id="abbr" name="abbr"
+                                      placeholder="abbr"
+                                      className="form-control"
+
+                        />
+                                           </Col>
+                </Row>
+
+                <Row className="form-group">
+                    <Label htmlFor="description" md={2}>Comment</Label>
+                    <Col md={10}>
+                        <Control.textarea model=".description" id="description" name="description"
+                                          className="form-control"
+
+                        />
+                    </Col>
+                </Row>
+                <Button type="submit" value="submit" color="primary">Submit</Button>
+            </LocalForm>
         </div>
     );
+    }
 }
 
 export default About;

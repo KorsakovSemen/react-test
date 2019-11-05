@@ -1,13 +1,11 @@
 import React, {Component} from 'react';
-import {Breadcrumb, BreadcrumbItem, Button, Form, FormGroup, Label,  Col, Row } from "reactstrap";
-import { Control, LocalForm, Errors } from "react-redux-form";
+import {Breadcrumb, BreadcrumbItem, Button, Label,  Col, Row } from "reactstrap";
+import { Control, Form, Errors } from "react-redux-form";
 import {Link} from "react-router-dom";
 
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !(val) || (val.length <= len);
 const minLength = (len) => (val) => val && (val.length >= len);
-const isNumber = (val) => !isNaN(Number(val));
-const validEmail = (val) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
 
 
 class Contact extends Component{
@@ -22,6 +20,7 @@ class Contact extends Component{
 
     handleSubmit(values){
         console.log(JSON.stringify(values));
+        this.props.resetFeedbackForm();
     }
 
 
@@ -70,7 +69,7 @@ class Contact extends Component{
                     <h3>Send us u feedback</h3>
                 </div>
                 <div className="col-12 col-md-9">
-                    <LocalForm onSubmit={(values) => this.handleSubmit(values)}>
+                    <Form model="feedback" onSubmit={(values) => this.handleSubmit(values)}>
                         <Row className="form-group">
                             <Label htmlFor="firstname" md={2}>First Name</Label>
                             <Col md={10}>
@@ -173,7 +172,7 @@ class Contact extends Component{
                                 </Button>
                             </Col>
                         </Row>
-                    </LocalForm>
+                    </Form>
                 </div>
             </div>
         </div>

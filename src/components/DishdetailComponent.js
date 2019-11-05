@@ -12,29 +12,36 @@ import {
     ModalHeader, ModalBody, Row, Label, Col
 } from "reactstrap";
 import {Link} from "react-router-dom";
-import {Control, Errors, LocalForm} from "react-redux-form";
-import {addComment} from "../redux/ActionCreators";
+import { Control, Errors, LocalForm} from "react-redux-form";
 import { Loading } from "./LoadingComponent";
+import {baseUrl} from "../shared/baseUrl";
+import { FadeTransform, Fade, Stagger } from 'react-animation-components';
 
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !(val) || (val.length <= len);
 const minLength = (len) => (val) => val && (val.length >= len);
 const isNumber = (val) => !isNaN(Number(val));
-const validEmail = (val) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
 
     function RenderDish({dish}){
 
         if(dish != null){
 
             return(
+                <FadeTransform
+                    in
+                    transformProps={{
+                        exitTransform: 'scale(0.5) translateY(-50%)'
+                    }}>
                 <Card>
-                    <CardImg width="100%" src={dish.image} alt={dish.name}/>
+
+                    <CardImg width="100%" src={baseUrl + dish.image} alt={dish.name}/>
                     <CardBody>
                         <CardTitle>{dish.name}</CardTitle>
                         <CardText>{dish.description}</CardText>
                         <CardText>{dish.price} $</CardText>
                     </CardBody>
                 </Card>
+                </FadeTransform>
 
             );
         }
@@ -45,13 +52,17 @@ const validEmail = (val) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val
         }
     }
 
-    function RenderComments({comments, addComment, dishId}){
+    function RenderComments({comments, postComment, dishId, ratingUp}){
+
+
         if(comments != null) {
             return (
                 <div>
                     <h3>Comments</h3>
+                    <Stagger in>
                     {comments.map((comment) => {
                         return (
+                            <Fade in>
                             <div key={comment.id}>
                                 <p>{comment.comment}</p>
                                 <p>-- {comment.author}, {new Intl.DateTimeFormat('en-US', {
@@ -59,11 +70,13 @@ const validEmail = (val) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val
                                     month: 'short',
                                     day: '2-digit'
                                 }).format(new Date(Date.parse(comment.date)))}</p>
+                                <h3>{comment.rating}</h3>
                             </div>
-
+                            </Fade>
                         );
                     })}
-                    <CommentForm dishId={dishId} addComment={addComment}/>
+                    </Stagger>
+                    <CommentForm dishId={dishId} postComment={postComment}/>
                 </div>
             );
         }
@@ -72,6 +85,10 @@ const validEmail = (val) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val
         }
 
     }
+
+
+
+
 class CommentForm extends React.Component {
 
     constructor(props) {
@@ -92,7 +109,7 @@ class CommentForm extends React.Component {
 
     handleSubmit(values){
         this.toggleModal();
-        this.props.addComment(this.props.dishId, values.rating, values.name, values.comment);
+        this.props.postComment(this.props.dishId, values.rating, values.name, values.comment);
     }
 
     render() {
@@ -218,7 +235,8 @@ class CommentForm extends React.Component {
                         </div>
                         <div className="col">
                         <RenderComments comments={props.comments}
-                            addComment={props.addComment}
+                            postComment={props.postComment}
+                            ratingUp={props.ratingUp}
                             dishId={props.dish.id}/>
                         </div>
                     </div>

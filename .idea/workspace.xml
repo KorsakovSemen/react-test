@@ -2,7 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c68a891-60f1-4adb-afee-d17f4fa4c741" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/assets/images/alberto.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/buffet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/elaicheesecake.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/uthappizza.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/vadonut.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/zucchipakoda.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/forms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/baseUrl.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AboutComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContactComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DishdetailComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DishdetailComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FooterComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FooterComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeaderComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeaderComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HomeComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomeComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MenuComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MenuComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PeopleComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PeopleComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/ActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/ActionCreators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/ActionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/ActionTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/comments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/configureStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/configureStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/leaders.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/leaders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/promotions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/promotions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/leaders.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/leaders.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,14 +60,16 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="$APPLICATION_CONFIG_DIR$/node/node-v10.16.0-win-x64/node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pako2\WebstormProjects\game\public\assets\images" />
+      <recent name="C:\Users\pako2\WebstormProjects\game\public\assets" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\pako2\WebstormProjects\game\src\components" />
       <recent name="C:\Users\pako2\WebstormProjects\game\src" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\pako2\WebstormProjects\game\public\assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -148,7 +177,27 @@
       <workItem from="1571882869155" duration="937000" />
       <workItem from="1571889124907" duration="1484000" />
       <workItem from="1571891088426" duration="849000" />
-      <workItem from="1571900627964" duration="2551000" />
+      <workItem from="1571900627964" duration="2634000" />
+      <workItem from="1571906818214" duration="1196000" />
+      <workItem from="1572074927049" duration="1236000" />
+      <workItem from="1572234482730" duration="665000" />
+      <workItem from="1572335797263" duration="2225000" />
+      <workItem from="1572338211052" duration="2024000" />
+      <workItem from="1572343525422" duration="1001000" />
+      <workItem from="1572425759542" duration="2732000" />
+      <workItem from="1572428713384" duration="486000" />
+      <workItem from="1572443431783" duration="1119000" />
+      <workItem from="1572487475577" duration="2271000" />
+      <workItem from="1572508059684" duration="2584000" />
+      <workItem from="1572512229972" duration="433000" />
+      <workItem from="1572512711809" duration="211000" />
+      <workItem from="1572516555657" duration="939000" />
+      <workItem from="1572595483217" duration="1555000" />
+      <workItem from="1572760671460" duration="2183000" />
+      <workItem from="1572788907727" duration="2105000" />
+      <workItem from="1572848622456" duration="28000" />
+      <workItem from="1572848692580" duration="893000" />
+      <workItem from="1572940456386" duration="4256000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1570333153032</created>
@@ -227,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571900137826</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="видно статьи">
+      <created>1571903250454</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1571903250454</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +314,7 @@
     <MESSAGE value="function reducer" />
     <MESSAGE value="loading" />
     <MESSAGE value="home" />
-    <option name="LAST_COMMIT_MESSAGE" value="home" />
+    <MESSAGE value="видно статьи" />
+    <option name="LAST_COMMIT_MESSAGE" value="видно статьи" />
   </component>
 </project>

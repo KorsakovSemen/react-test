@@ -32,7 +32,9 @@ class Header extends Component {
     handleLogin(event){
         this.toggleModal();
         alert(`Welcome, ${this.username.value}`);
-        event.preventDefault();
+        this.props.resetLogin();
+
+        //event.preventDefault();
     }
 
     render() {
@@ -94,7 +96,7 @@ class Header extends Component {
                         <p>Login</p>
                     </ModalHeader>
                     <ModalBody>
-                        <Form onSubmit={this.handleLogin}>
+                        <Form model="login" onSubmit={this.handleLogin}>
                             <FormGroup>
                                 <Label htmlFor="username">Username</Label>
                                 <Input type="text" id="username" name="username"
